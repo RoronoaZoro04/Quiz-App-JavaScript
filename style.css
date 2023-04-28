@@ -1,98 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-.main{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    background-color: rgb(206, 213, 213);
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgb(144, 136, 72);
 }
 
-.container{
-    width: 40vw;
-    background-color: #fff;
-    padding: 3rem 8rem;
-    border-radius: 1rem;
-    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+.container {
+  width: 50vw;
+  background-color: #e7eeef;
+  padding: 3rem 8rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
 }
 
-.container h2{
-    font-size: 3.5rem;
-    font-weight: 400;
-    margin: 1rem 0 4rem 0;
+.container h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 1rem 0 4rem 0;
 }
 
-.container li{
-    font-size: 2rem;
-    margin-top: 2rem;
-    list-style: none;
+.container li {
+  font-size: 2rem;
+  margin-top: 2rem;
+  list-style: none;
 }
 
 input {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-#timer{
-    text-align: right;
-    font-size: 1.5rem;
-    font-weight: 600;
+#timer {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-#submit, .btn{
-    padding: 1rem 3rem;
-    outline: none;
-    font-size: 2rem;
-    font-weight: 400;
-    display: block;
-    margin: auto;
-    border: none;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #3366FF;
-    margin-top: 4rem;
-    cursor: pointer;
-    border-radius: 0.5rem;
+#submit,
+.btn {
+  padding: 1rem 3rem;
+  outline: none;
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
+  margin: auto;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3366ff;
+  margin-top: 4rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
 }
 
-#submit:hover{
-    background-color: #1446dd;
+#submit:hover {
+  background-color: #1446dd;
 }
 
-#result{
-    background-color: aqua;
-    margin-top: 3rem;
-    padding: 3rem 4rem;
-    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+#result {
+  background-color: aqua;
+  margin-top: 3rem;
+  padding: 3rem 4rem;
+  box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
 }
 
-#result h3{
-    font-size: 3rem;
-    text-align: center;
+#result h3 {
+  font-size: 3rem;
+  text-align: center;
 }
 
-#result .btn{
-    margin-top: 2rem;
-    background-color: coral;
-    color: brown;
+#result .btn {
+  margin-top: 2rem;
+  background-color: coral;
+  color: brown;
 }
 
-#result .btn:hover{
-    background-color: rgb(234, 104, 57);
-    color: #fff;
+#result .btn:hover {
+  background-color: rgb(234, 104, 57);
+  color: #fff;
 }
-.result{
-    display: none;
+.result {
+  display: none;
 }
 
+hr {
+  border: 1px dotted rgb(42, 23, 1);
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1b1919;
+}
+
+#start {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #0f0;
+  margin: 23%;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #622121;
+  -webkit-box-reflect: below 0px linear-gradient (transparent, #0002);
+  transition: 0s;
+}
+
+#start:hover {
+  transition-delay: 1.5s;
+  color: #000;
+  box-shadow: 0 0 10px #0f0 0 0 20px #0f0 0 0 40px #0f0 0 0 80px #0f0 0 0 16 0px
+    #0f0;
+}
+
+#start span {
+  position: relative;
+  z-index: 100;
+}
+
+#start::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translate(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #0f0;
+  box-shadow: 5px -8px 0 #0f0, 5px 8px 0 #0f0;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+#start:hover::before {
+  width: 60%;
+  height: 10%;
+  left: -2px;
+  box-shadow: 5px 0 0 #0f0, 5px 0 0 #0f0;
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+#start::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translate(-50%);
+  height: 2px;
+  background-color: #0f0;
+  box-shadow: -5px -8px 0 #0f0, -5px 8px 0 #0f0;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+#start:hover::after {
+  width: 60%;
+  height: 10%;
+  right: -2px;
+  box-shadow: -5px 0 0 #0f0, -5px 0 0 #0f0;
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+@media screen and (max-width: 900px) {
+  /* *{
+        margin: auto;
+    } */
+  .container h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0.7rem 0 3rem 0;
+  }
+
+  .container {
+    width: 70vw;
+    padding: 1rem 4rem;
+  }
+}
