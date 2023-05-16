@@ -1,10 +1,10 @@
 const quizzy = [
   {
     question: "1. What is the correct HTML for creating a hyperlink?",
-    a: "Itonlineclub.tk.com",
-    b: "www.Itonlineclub.tk",
-    c: "Itonlineclub.tk",
-    d: "Http://itonlineclub.tk",
+    a: "itonlineclub.tk.com",
+    b: "www.itonlineclub.tk",
+    c: "itonlineclub.tk",
+    d: "http://itonlineclub.tk",
     ans: "ans4",
   },
   {
@@ -12,7 +12,7 @@ const quizzy = [
     a: "Object-Oriented",
     b: "Object-Based",
     c: "Procedural",
-    d: "None of the avobe",
+    d: "None of the above",
     ans: "ans1",
   },
   {
